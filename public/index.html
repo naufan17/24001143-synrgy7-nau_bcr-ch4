@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Binar Car Rental</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+
+  </head>
+  <body class="h-full">
+    <header class="bg-blue-50">
+      <nav>
+        <div class="relative px-8 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-12 lg:py-8">
+          <div class="flex items-center justify-between">
+            <!-- <img class="h-8 w-8" src="" alt="Your Company"/> -->
+            <div class="w-24 h-8 bg-blue-800"></div>
+            <ul class="space-x-8 items-center hidden lg:flex">
+              <li>
+                <a href="#OurServices" class="font-medium font-sans hover:text-gray-700">
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a href="#WhyUs" class="font-medium font-sans hover:text-gray-700">
+                  Why Us
+                </a>
+              </li>
+              <li>
+                <a href="#Testimonial" class="font-medium font-sans hover:text-gray-700">
+                  Testimonial
+                </a>
+              </li>
+              <li>
+                <a href="#FAQ" class="font-medium font-sans hover:text-gray-700">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a href="/" class="inline-flex items-center justify-center h-10 px-5 font-semibold font-sans text-white rounded bg-green-500 hover:bg-green-600">
+                  Register
+                </a>
+              </li>
+            </ul>
+            <!-- side nav button -->
+            <div class="lg:hidden">
+              <button id="openMenu" aria-label="Open Menu" title="Open Menu">
+                <i data-feather="menu" class="w-10 h-8"></i>
+              </button>     
+            </div>
+          </div>
+        </div>
+        <!-- Side nav menu -->
+        <div id="sideMenu" class="fixed inset-0 bg-gray-700 bg-opacity-50 z-50 hidden">
+          <div class="flex justify-end h-full">
+            <div class="bg-white w-64 p-6">
+              <div class="flex py-4 item-center justify-between">
+                <p class="font-bold font-sans text-lg">
+                  BCR
+                </p>
+                <button id="closeMenu" aria-label="Close Menu" title="Close Menu">
+                  <i data-feather="x" class="w-8"></i>
+                </button>
+              </div>
+              <ul class="space-y-4">
+                <li>
+                  <a href="#OurServices" class="font-medium font-sans hover:text-gray-700">
+                    Our Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#WhyUs" class="font-medium font-sans hover:text-gray-700">
+                    Why Us
+                  </a>
+                </li>
+                <li>
+                  <a href="#Testimonial" class="font-medium font-sans hover:text-gray-700">
+                    Testimonial
+                  </a>
+                </li>
+                <li>
+                  <a href="#FAQ" class="font-medium font-sans hover:text-gray-700">
+                    FAQ
+                  </a>
+                </li>
+                <li>
+                  <a href="/" class="inline-flex items-center justify-center h-10 px-5 font-semibold font-sans text-white rounded bg-green-500 hover:bg-green-600">
+                    Register
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="relative px-8 py-12 mt-12 mb-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-12 lg:py-16">
+        <div class="mb-16 lg:max-w-lg lg:mb-0">
+          <h2 class="mb-6 font-sans font-bold text-4xl leading-normal">
+            Sewa & Rental Mobil Terbaik di kawasan Sleman
+          </h2>
+          <p class="mb-6 text-base text-justify font-sans">
+            Selamat datang di Binar Car Rental. 
+            Kami menyediakan mobil berkualitas terbaik dengan jarga terjagkau. 
+            Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
+          </p>
+          <a href="/" class="inline-flex items-center justify-center h-10 px-5 font-semibold font-sans text-white rounded bg-green-500 hover:bg-green-600">
+            Mulai Sewa Mobil
+          </a>
+        </div>
+        <div class="flex justify-center lg:absolute bottom-0 right-0">
+          <img src="images/img_car.png" class="object-cover object-top w-full max-w-xl lg:h-auto lg:max-w-screen-sm" alt="Car"/>
+        </div>
+      </div>
+    </header>
+    
+    <section id="OurServices">
+      <div class="relative px-8 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-12 lg:py-16">
+        <div class="grid gap-12 lg:grid-cols-2">
+          <div class="flex justify-center">
+            <img class="object-cover h-full" src="images/img_service.png" alt="Service" />
+          </div>
+          <div class="flex flex-col">
+            <div class="mb-6">
+              <h2 class="mb-6 font-bold font-sans text-3xl leading-normal justify-center">
+                Best Car Rental for any kind of trip in Sleman!
+              </h2>
+              <p class="text-base text-justify font-sans justify-center">
+                Sewa mobil di Sleman bersama Binar Car Rental jaminan harga lebih murah dibandingkan yang lain, 
+                kondisi mobil baru, serta kualitas pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting, dll.
+              </p>
+            </div>
+            <ul class="space-y-5">
+              <li class="flex text-base font-sans">
+                <span class="mr-4 bg-blue-200 rounded-full p-px">
+                  <i data-feather="check" class="w-6 text-blue-800"></i>
+                </span>
+                Sewa Mobil Dengan Supir di Bali 12 Jam
+              </li>
+              <li class="flex text-base font-sans">
+                <span class="mr-4 bg-blue-200 rounded-full p-px">
+                  <i data-feather="check" class="w-6 text-blue-800"></i>
+                </span>
+                Sewa Mobil Lepas Kunci di Bali 24 Jam
+              </li>
+              <li class="flex text-base font-sans">
+                <span class="mr-4 bg-blue-200 rounded-full p-px">
+                  <i data-feather="check" class="w-6 text-blue-800"></i>
+                </span>
+                Sewa Mobil Jangka Panjang Bulanan
+              </li>
+              <li class="flex text-base font-sans">
+                <span class="mr-4 bg-blue-200 rounded-full p-px">
+                  <i data-feather="check" class="w-6 text-blue-800"></i>
+                </span>
+                Gratis Antar - Jemput Mobil di Bandara
+              </li>
+              <li class="flex text-base font-sans">
+                <span class="mr-4 bg-blue-200 rounded-full p-px">
+                  <i data-feather="check" class="w-6 text-blue-800"></i>
+                </span>
+                Layanan Airport Transfer / Drop In Out
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="WhyUs">
+      <div class="relative px-8 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-12 lg:py-16">
+        <div class="mb-8 lg:mb-12 text-center sm:text-left">
+          <h2 class="mb-6 font-sans font-bold text-3xl leading-normal">
+            Why Us?
+          </h2>
+          <p class="text-base font-sans">
+            Mengapa harus pilih Binar Car Rental?
+          </p>
+        </div>
+        <div class="grid gap-4 md:gap-6 lg:grid-cols-4 md:grid-cols-2">
+          <div class="px-4 py-4 border-2 rounded-lg lg:px-6 lg:py-6">
+            <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-yellow-400">
+              <i data-feather="thumbs-up" class="text-white"></i>
+            </div>
+            <h3 class="mb-3 text-lg sm:text-xl font-bold font-sans">
+              Mobil Lengkap
+            </h3>
+            <p class="font-sans text-base text-justify">
+              Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat.
+            </p>
+          </div>
+          <div class="px-4 py-4 border-2 rounded-lg lg:px-6 lg:py-6">
+            <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-red-500">
+              <i data-feather="tag" class="text-white"></i>
+            </div>
+            <h3 class="mb-3 text-lg sm:text-xl font-bold font-sans">
+              Harga Murah
+            </h3>
+            <p class="font-sans text-base text-justify">
+              Harga murah dan bersaing, bisa bandingkan harga kami dengan rental mobil lain
+            </p>
+          </div>
+          <div class="px-4 py-4 border-2 rounded-lg lg:px-6 lg:py-6">
+            <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-blue-700">
+              <i data-feather="clock" class="text-white"></i>
+            </div>
+            <h3 class="mb-3 text-lg sm:text-xl font-bold font-sans">
+              Layanan 24 Jam
+            </h3>
+            <p class="font-sans text-base text-justify">
+              Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami juga tersedia di akhir minggu
+            </p>
+          </div>
+          <div class="px-4 py-4 border-2 rounded-lg lg:px-6 lg:py-6">
+            <div class="flex items-center justify-center w-10 h-10 mb-4 rounded-full bg-green-500">
+              <i data-feather="award" class="text-white"></i>
+            </div>
+            <h3 class="mb-3 text-lg sm:text-xl font-bold font-sans">
+              Sopir Profesional
+            </h3>
+            <p class="font-sans text-base text-justify">
+              Sopir yang profesional, berpengalaman, jujur, ramah dan selalu tepat waktu
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel no library -->
+    <section id="Testimonial">
+      <div class="relative px-8 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-12 lg:py-16">
+        <div class="mb-8 lg:mb-12 text-center">
+          <h2 class="mb-6 font-sans font-bold text-3xl leading-normal">
+            Testimonial
+          </h2>
+          <p class="text-base font-sans">
+            Berbagai review positif dari para pelanggan kami
+          </p>
+        </div>
+        <div class="grid grid-cols-1">
+          <div class="testimonial-item p-8 w-auto h-80 sm:h-64 md:h-56 lg:h-64 sm:max-w-full md:w-3/4 lg:w-1/2 rounded-lg bg-blue-50 shadow-sm lg:p-12 justify-self-center">
+            <div class="flex flex-col sm:flex-row items-center justify-center">
+              <div class="sm:mr-6">
+                <div class="flex w-16 h-16 mb-4">
+                  <img src="images/img_photo.png" class="rounded-full" alt="Profile"/>
+                </div>  
+              </div>
+              <div>
+                <div class="flex w-4 h-4 mb-2">
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                </div>                  
+                <p class="mx-auto mb-2 font-sans text-base text-justify">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”          
+                </p>
+                <p class="mx-auto font-semibold font-sans text-base">
+                  John Dee 32, Bromo
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item p-8 w-auto h-80 sm:h-64 md:h-56 lg:h-64 sm:max-w-full md:w-3/4 lg:w-1/2 rounded-lg bg-blue-50 shadow-sm lg:p-12 justify-self-center">
+            <div class="flex flex-col sm:flex-row items-center justify-center">
+              <div class="sm:mr-6">
+                <div class="flex w-16 h-16 mb-4">
+                  <img src="images/img_photo(1).png" class="rounded-full" alt="Profile"/>
+                </div>
+              </div>
+              <div>
+                <div class="flex w-4 h-4 mb-2">
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                </div>                  
+                <p class="mx-auto mb-2 font-sans text-base text-justify">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit, sed do eiusmod”          
+                </p>
+                <p class="mx-auto font-semibold font-sans text-base">
+                  Felicia, Dieng
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item p-8 w-auto h-80 sm:h-64 md:h-56 lg:h-64 sm:max-w-full md:w-3/4 lg:w-1/2 rounded-lg bg-blue-50 shadow-sm lg:p-12 justify-self-center">
+            <div class="flex flex-col sm:flex-row items-center justify-center">
+              <div class="sm:mr-6">
+                  <div class="flex w-16 h-16 mb-4">
+                  <img src="images/img_photo(2).jpg" class="rounded-full" alt="Profile"/>
+                </div>
+              </div>
+              <div>
+                <div class="flex w-4 h-4 mb-2">
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                </div>                  
+                <p class="mx-auto mb-2 font-sans text-base text-justify">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet”          
+                </p>
+                <p class="mx-auto font-semibold font-sans text-base">
+                  Unknown, Zimbawe
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center mt-8">
+          <button id="prevButton" class="p-1 w-9 h-9 border rounded-full mr-2 hover:text-white hover:bg-green-500">
+            <i data-feather="chevron-left" class="w-6 h-6"></i>
+          </button>
+          <button id="nextButton" class="p-1 w-9 h-9 border rounded-full ml-2 hover:text-white hover:bg-green-500">
+            <i data-feather="chevron-right" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Carousel sweeperjs -->
+    <!-- <section id="Testimonial">
+      <div class="relative py-12 lg:py-16">
+        <div class="mb-8 lg:mb-12 text-center">
+          <h2 class="mb-6 font-sans font-bold text-3xl leading-normal">
+            Testimonial
+          </h2>
+          <p class="text-base font-sans">
+            Berbagai review positif dari para pelanggan kami
+          </p>
+        </div>
+        <swiper-container slides-per-view="3" space-between="2" centered-slides="true" speed="1000">
+          <swiper-slide class="p-8 mr-4 ml-4 w-96 h-96 sm:h-72 md:h-64 lg:h-60 rounded-lg bg-blue-50 shadow-sm lg:p-12 justify-self-center">
+            <div class="flex flex-col sm:flex-row items-center justify-center">
+              <div class="sm:mr-6">
+                <div class="flex w-16 h-16 mb-4">
+                  <img src="images/img_photo.png" class="rounded-full" alt="Profile"/>
+                </div>  
+              </div>
+              <div>
+                <div class="flex w-4 h-4 mb-2">
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                </div>                  
+                <p class="mx-auto mb-2 font-sans text-base text-justify">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”          
+                </p>
+                <p class="mx-auto font-semibold font-sans text-base">
+                  John Dee 32, Bromo
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="p-8 mr-4 ml-4 w-96 h-96 sm:h-72 md:h-64 lg:h-60 rounded-lg bg-blue-50 shadow-sm lg:p-12 justify-self-center">
+            <div class="flex flex-col sm:flex-row items-center justify-center">
+              <div class="sm:mr-6">
+                <div class="flex w-16 h-16 mb-4">
+                  <img src="images/img_photo(1).png" class="rounded-full" alt="Profile"/>
+                </div>
+              </div>
+              <div>
+                <div class="flex w-4 h-4 mb-2">
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                </div>                  
+                <p class="mx-auto mb-2 font-sans text-base text-justify">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit, sed do eiusmod”          
+                </p>
+                <p class="mx-auto font-semibold font-sans text-base">
+                  Felicia, Dieng
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+          <swiper-slide class="p-8 mr-4 ml-4 w-96 h-96 sm:h-72 md:h-64 lg:h-60 rounded-lg bg-blue-50 shadow-sm lg:p-12 justify-self-center">
+            <div class="flex flex-col sm:flex-row items-center justify-center">
+              <div class="sm:mr-6">
+                  <div class="flex w-16 h-16 mb-4">
+                  <img src="images/img_photo(2).jpg" class="rounded-full" alt="Profile"/>
+                </div>
+              </div>
+              <div>
+                <div class="flex w-4 h-4 mb-2">
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                  <img src="images/star.png" alt="Star"/>
+                </div>                  
+                <p class="mx-auto mb-2 font-sans text-base text-justify">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, 
+                  consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet”          
+                </p>
+                <p class="mx-auto font-semibold font-sans text-base">
+                  Unknown, Zimbawe
+                </p>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper-container>
+        <div class="flex justify-center mt-8">
+          <button id="prevButton" class="p-1 w-9 h-9 border rounded-full mr-2 hover:text-white hover:bg-green-500">
+            <i data-feather="chevron-left" class="w-6 h-6"></i>
+          </button>
+          <button id="nextButton" class="p-1 w-9 h-9 border rounded-full ml-2  hover:text-white hover:bg-green-500">
+            <i data-feather="chevron-right" class="w-6 h-6"></i>
+          </button>
+        </div>
+      </div>
+    </section> -->
+
+    <section>
+      <div class="relative px-8 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-12 lg:py-16">
+        <div class="p-12 bg-blue-800 rounded-xl sm:p-16">
+          <div class="flex item-center justify-center">
+            <div class="max-w-screen-sm text-center">
+              <h2 class="mb-6 font-sans font-bold text-3xl sm:text-4xl text-white leading-normal">
+                Sewa Mobil di Sleman Sekarang
+              </h2>
+              <p class="mb-10 text-base text-white font-sans">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              </p>
+              <a href="/" class="inline-flex items-center justify-center h-10 px-5 font-semibold font-sans text-white rounded bg-green-500 hover:bg-green-600">
+                Mulai Sewa Mobil
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="FAQ">
+      <div class="relative px-8 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-12 lg:py-16">
+        <div class="grid gap-0 lg:gap-12 row-gap-12 grid-cols-1 lg:grid-cols-5">
+          <div class="flex flex-col col-span-2">
+            <div class="mb-8 lg:mb-12">
+              <h2 class="mb-6 font-sans text-center lg:text-left font-bold text-3xl leading-normal">
+                Frequently Asked Question
+              </h2>
+              <p class="text-base font-sans text-center lg:text-left">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col col-span-3 justify-center">
+            <div class="space-y-4">
+              <div class="border-2 rounded">
+                <button type="button" aria-label="Open item" title="Open item" class="flex items-center justify-between w-full p-4" onclick="toggleAccordion(this)">
+                  <p class="font-sans text-base text-justify">
+                    Apa saja yang dibutuhkan?
+                  </p>
+                  <div class="flex items-center justify-center">
+                    <i data-feather="chevron-down" class="w-6 h-6 arrow-icon"></i>
+                  </div>
+                </button>
+                <!-- Show content if is open  -->
+                <div class="p-4 pt-0 hidden">
+                    <p class="font-sans text-base text-justify">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae
+                  </p>
+                </div>     
+              </div>
+              <div class="border-2 rounded">
+                <button type="button" aria-label="Open item" title="Open item" class="flex items-center justify-between w-full p-4" onclick="toggleAccordion(this)">
+                  <p class="font-sans text-base text-justify">
+                    Berapa hari minimal sewa mobil lepas kunci?
+                  </p>
+                  <div class="flex items-center justify-center">
+                    <i data-feather="chevron-down" class="w-6 h-6 arrow-icon"></i>
+                  </div>
+                </button>
+                <!-- Show content if is open  -->
+                <div class="p-4 pt-0 hidden">
+                  <p class="font-sans text-base text-justify">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae
+                  </p>
+                </div>     
+              </div>
+              <div class="border-2 rounded">
+                <button type="button" aria-label="Open item" title="Open item" class="flex items-center justify-between w-full p-4" onclick="toggleAccordion(this)">
+                  <p class="font-sans text-base text-justify">
+                    Berapa hari sebelumnya sebaiknya booking sewa mobil?
+                  </p>
+                  <div class="flex items-center justify-center">
+                    <i data-feather="chevron-down" class="w-6 h-6 arrow-icon"></i>
+                  </div>
+                </button>
+                <!-- Show content if is open  -->
+                <div class="p-4 pt-0 hidden">
+                  <p class="font-sans text-base text-justify">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae
+                  </p>
+                </div>     
+              </div>
+              <div class="border-2 rounded">
+                <button type="button" aria-label="Open item" title="Open item" class="flex items-center justify-between w-full p-4" onclick="toggleAccordion(this)">
+                  <p class="font-sans text-base text-justify">
+                    Apakah Ada biaya antar jemput?
+                  </p>
+                  <div class="flex items-center justify-center">
+                    <i data-feather="chevron-down" class="w-6 h-6 arrow-icon"></i>
+                  </div>
+                </button>
+                <!-- Show content if is open  -->
+                <div class="p-4 pt-0 hidden">
+                  <p class="font-sans text-base text-justify">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae
+                  </p>
+                </div>     
+              </div>
+              <div class="border-2 rounded">
+                <button type="button" aria-label="Open item" title="Open item" class="flex items-center justify-between w-full p-4" onclick="toggleAccordion(this)">
+                  <p class="font-sans text-base text-justify">
+                    Bagaimana jika terjadi kecelakaan?
+                  </p>
+                  <div class="flex items-center justify-center">
+                    <i data-feather="chevron-down" class="w-6 h-6 arrow-icon"></i>
+                  </div>
+                </button>
+                <!-- Show content if is open  -->
+                <div class="p-4 pt-0 hidden">
+                  <p class="font-sans text-base text-justify">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque rem aperiam, eaque ipsa quae
+                  </p>
+                </div>     
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="relative px-8 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-12 lg:py-16">
+        <div class="grid gap-12 grid-cols-1 md:grid-cols-4 row-gap-12 lg:grid-cols-7">
+          <div class="md:col-span-2 col-span-1">
+            <p class="mb-2 lg:mb-4 text-base font-sans">
+              Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
+            </p>
+            <p class="mb-2 lg:mb-4 text-base font-sans">
+              binarcarrental@gmail.com
+            </p>
+            <p class="mb-2 lg:mb-4 text-base font-sans">
+              081-233-334-808
+            </p>
+          </div>
+          <div>
+            <ul class="space-y-4">
+              <li>
+                <a href="#OurServices" class="text-base font-medium font-sans">
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a href="#WhyUs" class="text-base font-medium font-sans">
+                  Why Us
+                </a>
+              </li>
+              <li>
+                <a href="#Testimonial" class="text-base font-medium font-sans">
+                  Testimonial
+                </a>
+              </li>
+              <li>
+                <a href="#FAQ" class="text-base font-medium font-sans">
+                  FAQ
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:col-span-2 col-span-1">
+            <p class="mb-2 lg:mb-4 text-base font-sans">
+              Connect with us
+            </p>
+            <div class="flex">
+              <div class="w-10 h-10 p-1 mr-4 rounded-full bg-blue-700">
+                <i data-feather="facebook" class="w-8 mt-1 text-white"></i>
+              </div>
+              <div class="w-10 h-10 p-1 mr-4 rounded-full bg-blue-700">
+                <i data-feather="instagram" class="w-8 mt-1 text-white"></i>
+              </div>
+              <div class="w-10 h-10 p-1 mr-4 rounded-full bg-blue-700">
+                <i data-feather="twitter" class="w-8 mt-1 text-white"></i>
+              </div>
+              <div class="w-10 h-10 p-1 mr-4 rounded-full bg-blue-700">
+                <i data-feather="mail" class="w-8 mt-1 text-white"></i>
+              </div>
+              <div class="w-10 h-10 p-1 mr-4 rounded-full bg-blue-700">
+                <i data-feather="twitch" class="w-8 mt-1 text-white"></i>
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-2 col-span-1">
+            <p class="mb-2 lg:mb-4 text-base font-sans">
+              Copyright Binar 2022
+            </p>
+            <!-- <img class="h-8 w-8" src="" alt="Your Company"/> -->
+            <div class="w-24 h-8 bg-blue-800"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+
+      feather.replace();
+
+      // Mobile Side Nav Menu
+      const openMenu = document.getElementById('openMenu');
+      const closeMenu = document.getElementById('closeMenu');
+      const sideMenu = document.getElementById('sideMenu');
+
+      openMenu.addEventListener('click', () => {
+        sideMenu.classList.toggle('hidden');
+      });
+
+      closeMenu.addEventListener('click', () => {
+        sideMenu.classList.toggle('hidden');
+      });
+      
+      // Accordion
+      function toggleAccordion(button) {
+        const content = button.nextElementSibling;
+        const arrowIcon = button.querySelector('.arrow-icon');
+
+        content.classList.toggle('hidden');
+        arrowIcon.classList.toggle('rotate-180');
+      }
+
+      // Corousel
+      // const swiperEl = document.querySelector('swiper-container');
+      const prevButton = document.getElementById('prevButton');
+      const nextButton = document.getElementById('nextButton');
+      const testimonialItems = document.querySelectorAll('.testimonial-item');
+      let currentIndex = 0;
+
+      // Sweeperjs
+      // nextButton.addEventListener('click', () => {
+      //   swiperEl.swiper.slideNext();
+      // });
+
+      // prevButton.addEventListener('click', () => {
+      //   swiperEl.swiper.slidePrev();
+      // });
+
+      // DOMjs
+      const showItem = (index) => {
+        testimonialItems.forEach(item => item.classList.add('hidden'));
+        testimonialItems[index].classList.remove('hidden');
+      };
+
+      showItem(currentIndex);
+
+      prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + testimonialItems.length) % testimonialItems.length;
+        showItem(currentIndex);
+      });
+
+      nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % testimonialItems.length;
+        showItem(currentIndex);
+      });
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+body {
+  font-family: Helvetica, Sans-Serif;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
