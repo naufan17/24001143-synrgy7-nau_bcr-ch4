@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Binar Car Rental</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+
+  </head>
+  <body class="h-full">
+    <header class="bg-blue-50">
+      <nav>
+        <div class="relative px-8 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-12 lg:py-8">
+          <div class="flex items-center justify-between">
+            <!-- <img class="h-8 w-8" src="" alt="Your Company"/> -->
+            <div class="w-24 h-8 bg-blue-800"></div>
+            <ul class="space-x-8 items-center hidden lg:flex">
+              <li>
+                <a href="#OurServices" class="font-medium font-sans hover:text-gray-700">
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a href="#WhyUs" class="font-medium font-sans hover:text-gray-700">
+                  Why Us
+                </a>
+              </li>
+              <li>
+                <a href="#Testimonial" class="font-medium font-sans hover:text-gray-700">
+                  Testimonial
+                </a>
+              </li>
+              <li>
+                <a href="#FAQ" class="font-medium font-sans hover:text-gray-700">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a href="/" class="inline-flex items-center justify-center h-10 px-5 font-semibold font-sans text-white rounded bg-green-500 hover:bg-green-600">
+                  Register
+                </a>
+              </li>
+            </ul>
+            <!-- side nav button -->
+            <div class="lg:hidden">
+              <button id="openMenu" aria-label="Open Menu" title="Open Menu">
+                <i data-feather="menu" class="w-10 h-8"></i>
+              </button>     
+            </div>
+          </div>
+        </div>
+        <!-- Side nav menu -->
+        <div id="sideMenu" class="fixed inset-0 bg-gray-700 bg-opacity-50 z-50 hidden">
+          <div class="flex justify-end h-full">
+            <div class="bg-white w-64 p-6">
+              <div class="flex py-4 item-center justify-between">
+                <p class="font-bold font-sans text-lg">
+                  BCR
+                </p>
+                <button id="closeMenu" aria-label="Close Menu" title="Close Menu">
+                  <i data-feather="x" class="w-8"></i>
+                </button>
+              </div>
+              <ul class="space-y-4">
+                <li>
+                  <a href="#OurServices" class="font-medium font-sans hover:text-gray-700">
+                    Our Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#WhyUs" class="font-medium font-sans hover:text-gray-700">
+                    Why Us
+                  </a>
+                </li>
+                <li>
+                  <a href="#Testimonial" class="font-medium font-sans hover:text-gray-700">
+                    Testimonial
+                  </a>
+                </li>
+                <li>
+                  <a href="#FAQ" class="font-medium font-sans hover:text-gray-700">
+                    FAQ
+                  </a>
+                </li>
+                <li>
+                  <a href="/" class="inline-flex items-center justify-center h-10 px-5 font-semibold font-sans text-white rounded bg-green-500 hover:bg-green-600">
+                    Register
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="relative px-8 py-12 mt-12 mb-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-12 lg:py-16">
+        <div class="mb-16 lg:max-w-lg lg:mb-0">
+          <h2 class="mb-6 font-sans font-bold text-4xl leading-normal">
+            Sewa & Rental Mobil Terbaik di kawasan Sleman
+          </h2>
+          <p class="mb-6 text-base text-justify font-sans">
+            Selamat datang di Binar Car Rental. 
+            Kami menyediakan mobil berkualitas terbaik dengan jarga terjagkau. 
+            Selalu siap melayani kebutuhanmu untuk sewa mobil selama 24 jam.
+          </p>
+          <a href="/cars" class="inline-flex items-center justify-center h-10 px-5 font-semibold font-sans text-white rounded bg-green-500 hover:bg-green-600">
+            Mulai Sewa Mobil
+          </a>
+        </div>
+        <div class="flex justify-center lg:absolute bottom-0 right-0">
+          <img src="images/img_car.png" class="object-cover object-top w-full max-w-xl lg:h-auto lg:max-w-screen-sm" alt="Car"/>
+        </div>
+      </div>
+    </header>
+
+    <section id="Search">
+      <div class="relative px-8 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-12 lg:py-6">
+        <div class="flex rounded-lg shadow-lg">
+          <div class="grid grid-cols-4 md:grid-cols-9">
+            <div class="inline-block col-span-2 p-5 md:p-6">
+              <label for="driver" class="inline-block mb-3">Tipe Driver</label>
+              <select 
+                name="driver" 
+                id="driver"
+                class="flex-grow w-full h-10 px-4 bg-white border border-gray-300 rounded focus:outline-none focus:shadow-outline"
+              >
+                <option value="" disabled selected hidden>Pilih Driver</option>
+                <option value="Dengan Sopir">Dengan Sopir</option>
+                <option value="Tanpa Sopir">Tanpa Sopir</option>  
+              </select>
+            </div>    
+            <div class="inline-block col-span-2 p-5 md:p-6">
+              <label for="tanggal" class="inline-block mb-3">Tanggal</label>
+              <input
+                required
+                type="date"
+                id="tanggal"
+                name="tanggal"
+                placeholder="Pilih Tanggal"
+                class="flex-grow w-full h-10 px-4 bg-white border border-gray-300 rounded focus:outline-none focus:shadow-outline"
+              />
+            </div>    
+            <div class="inline-block col-span-2 p-5 md:p-6">
+              <label for="waktu" class="inline-block mb-3">Waktu Jemput/Ambil</label>
+              <input
+                required
+                type="time"
+                id="waktu"
+                name="waktu"
+                placeholder="Pilih Waktu"
+                class="flex-grow w-full h-10 px-4 bg-white border border-gray-300 rounded focus:outline-none focus:shadow-outline"
+              />
+            </div>    
+            <div class="inline-block col-span-2 p-5 md:p-6">
+              <label for="penumpang" class="inline-block mb-3">Jumlah Penumpang</label>
+              <input
+                required=""
+                type="number"
+                id="penumpang"
+                name="penumpang"
+                placeholder="Jumlah Penumpang"
+                class="flex-grow w-full h-10 px-4 p-2 bg-white border border-gray-300 rounded focus:outline-none focus:shadow-outline"
+              />
+            </div>
+            <div class="inline-block col-span-2 md:col-span-1 p-5 md:p-6 md:mt-9">
+              <button 
+                type="submit" 
+                class="inline-flex items-center justify-center h-10 px-4 md:px-1 font-semibold font-sans text-white rounded bg-green-500 hover:bg-green-600">
+                Cari Mobil
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Cars">
+      <div class="relative px-8 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-12 lg:py-6">
+        <div class="grid gap-4 md:gap-6 lg:grid-cols-3 md:grid-cols-2">
+          <div class="px-4 py-4 border-2 rounded-lg lg:px-6 lg:py-6">
+            <div class="flex items-center justify-center mb-3">
+              <img src="images/img_car.png" class="object-cover object-top" alt="Car"/>
+            </div>
+            <p class="mb-3 font-sans text-base text-justify">
+              Nama/Tipe Mobil
+            </p>
+            <h3 class="mb-3 text-base font-bold font-sans">
+              RP 430.000 / hari
+            </h3>
+            <p class="mb-3 font-sans text-base text-justify">
+              Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex text-base font-sans">
+                <span class="mr-4">
+                  <i data-feather="users" class="w-5"></i>
+                </span>
+                4 orang
+              </li>
+              <li class="flex text-base font-sans">
+                <span class="mr-4">
+                  <i data-feather="settings" class="w-5"></i>
+                </span> 
+                Manual
+              </li>
+              <li class="flex text-base font-sans">
+                <span class="mr-4">
+                  <i data-feather="calendar" class="w-5"></i>
+                </span>
+                Tahun 2020
+              </li>
+            </ul>
+            <div class="flex items-center justify-center mt-6">
+              <a href="" class="inline-flex items-center justify-center h-12 px-16 sm:px-28 font-semibold font-sans text-white rounded bg-green-500 hover:bg-green-600">
+                Pilih Mobil
+              </a>  
+            </div>
+          </div>
+          <div class="px-4 py-4 border-2 rounded-lg lg:px-6 lg:py-6">
+            <div class="flex items-center justify-center mb-3">
+              <img src="images/img_car.png" class="object-cover object-top" alt="Car"/>
+            </div>
+            <p class="mb-3 font-sans text-base text-justify">
+              Nama/Tipe Mobil
+            </p>
+            <h3 class="mb-3 text-base font-bold font-sans">
+              RP 430.000 / hari
+            </h3>
+            <p class="mb-3 font-sans text-base text-justify">
+              Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex text-base font-sans">
+                <span class="mr-4">
+                  <i data-feather="users" class="w-5"></i>
+                </span>
+                4 orang
+              </li>
+              <li class="flex text-base font-sans">
+                <span class="mr-4">
+                  <i data-feather="settings" class="w-5"></i>
+                </span> 
+                Manual
+              </li>
+              <li class="flex text-base font-sans">
+                <span class="mr-4">
+                  <i data-feather="calendar" class="w-5"></i>
+                </span>
+                Tahun 2020
+              </li>
+            </ul>
+            <div class="flex items-center justify-center mt-6">
+              <a href="" class="inline-flex items-center justify-center h-12 px-16 sm:px-28 font-semibold font-sans text-white rounded bg-green-500 hover:bg-green-600">
+                Pilih Mobil
+              </a>  
+            </div>
+          </div>
+          <div class="px-4 py-4 border-2 rounded-lg lg:px-6 lg:py-6">
+            <div class="flex items-center justify-center mb-3">
+              <img src="images/img_car.png" class="object-cover object-top" alt="Car"/>
+            </div>
+            <p class="mb-3 font-sans text-base text-justify">
+              Nama/Tipe Mobil
+            </p>
+            <h3 class="mb-3 text-base font-bold font-sans">
+              RP 430.000 / hari
+            </h3>
+            <p class="mb-3 font-sans text-base text-justify">
+              Tersedia banyak pilihan mobil, kondisi masih baru, bersih dan terawat.
+            </p>
+            <ul class="space-y-3">
+              <li class="flex text-base font-sans">
+                <span class="mr-4">
+                  <i data-feather="users" class="w-5"></i>
+                </span>
+                4 orang
+              </li>
+              <li class="flex text-base font-sans">
+                <span class="mr-4">
+                  <i data-feather="settings" class="w-5"></i>
+                </span> 
+                Manual
+              </li>
+              <li class="flex text-base font-sans">
+                <span class="mr-4">
+                  <i data-feather="calendar" class="w-5"></i>
+                </span>
+                Tahun 2020
+              </li>
+            </ul>
+            <div class="flex items-center justify-center mt-6">
+              <a href="" class="inline-flex items-center justify-center h-12 px-16 sm:px-28 font-semibold font-sans text-white rounded bg-green-500 hover:bg-green-600">
+                Pilih Mobil
+              </a>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <div class="relative px-8 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 lg:px-12 lg:py-16">
+        <div class="grid gap-12 grid-cols-1 md:grid-cols-4 row-gap-12 lg:grid-cols-7">
+          <div class="md:col-span-2 col-span-1">
+            <p class="mb-2 lg:mb-4 text-base font-sans">
+              Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000
+            </p>
+            <p class="mb-2 lg:mb-4 text-base font-sans">
+              binarcarrental@gmail.com
+            </p>
+            <p class="mb-2 lg:mb-4 text-base font-sans">
+              081-233-334-808
+            </p>
+          </div>
+          <div>
+            <ul class="space-y-4">
+              <li>
+                <a href="#OurServices" class="text-base font-medium font-sans">
+                  Our Services
+                </a>
+              </li>
+              <li>
+                <a href="#WhyUs" class="text-base font-medium font-sans">
+                  Why Us
+                </a>
+              </li>
+              <li>
+                <a href="#Testimonial" class="text-base font-medium font-sans">
+                  Testimonial
+                </a>
+              </li>
+              <li>
+                <a href="#FAQ" class="text-base font-medium font-sans">
+                  FAQ
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="md:col-span-2 col-span-1">
+            <p class="mb-2 lg:mb-4 text-base font-sans">
+              Connect with us
+            </p>
+            <div class="flex">
+              <div class="w-10 h-10 p-1 mr-4 rounded-full bg-blue-700">
+                <i data-feather="facebook" class="w-8 mt-1 text-white"></i>
+              </div>
+              <div class="w-10 h-10 p-1 mr-4 rounded-full bg-blue-700">
+                <i data-feather="instagram" class="w-8 mt-1 text-white"></i>
+              </div>
+              <div class="w-10 h-10 p-1 mr-4 rounded-full bg-blue-700">
+                <i data-feather="twitter" class="w-8 mt-1 text-white"></i>
+              </div>
+              <div class="w-10 h-10 p-1 mr-4 rounded-full bg-blue-700">
+                <i data-feather="mail" class="w-8 mt-1 text-white"></i>
+              </div>
+              <div class="w-10 h-10 p-1 mr-4 rounded-full bg-blue-700">
+                <i data-feather="twitch" class="w-8 mt-1 text-white"></i>
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-2 col-span-1">
+            <p class="mb-2 lg:mb-4 text-base font-sans">
+              Copyright Binar 2022
+            </p>
+            <!-- <img class="h-8 w-8" src="" alt="Your Company"/> -->
+            <div class="w-24 h-8 bg-blue-800"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+
+      feather.replace();
+
+      // Mobile Side Nav Menu
+      const openMenu = document.getElementById('openMenu');
+      const closeMenu = document.getElementById('closeMenu');
+      const sideMenu = document.getElementById('sideMenu');
+
+      openMenu.addEventListener('click', () => {
+        sideMenu.classList.toggle('hidden');
+      });
+
+      closeMenu.addEventListener('click', () => {
+        sideMenu.classList.toggle('hidden');
+      });
+      
+    </script>
+  </body>
+</html>
