@@ -24,11 +24,11 @@ const readFileAndResponse = (res, filename) => {
   fs.readFile(filePath, (err, content) => {
     if (err) {
       res.statusCode = 404;
-      res.setHeader('Content-Type', 'text/plain');
+      // res.setHeader('Content-Type', 'text/plain');
       res.end('404 Not Found');
     }
     res.statusCode = 200;
-    res.setHeader('Content-Type', 'text/html');
+    // res.setHeader('Content-Type', 'text/html');
     res.end(content);
 });
 }
