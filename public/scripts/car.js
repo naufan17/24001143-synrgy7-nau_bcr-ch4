@@ -1,10 +1,4 @@
-class Car {
-  static list = [];
-
-  static init(cars) {
-    this.list = cars.map((i) => new this(i));
-  }
-
+class Component {
   constructor({
     id,
     plate,
@@ -37,6 +31,14 @@ class Car {
     this.options = options;
     this.specs = specs;
     this.availableAt = availableAt;
+  }
+}
+
+class Car extends Component {
+  static list = [];
+
+  static init(cars) {
+    this.list = cars.map((i) => new this(i));
   }
 
   render() {

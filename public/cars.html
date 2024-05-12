@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>Binar Car Rental</title>
-
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
-
   </head>
+
   <body class="h-full">
     <header class="bg-blue-50">
       <nav>
@@ -128,33 +128,31 @@
               <select 
                 name="driver" 
                 id="driver"
-                class="flex-grow w-full h-10 px-4 bg-white font-sans border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring-1"
+                class="flex-grow w-full h-10 px-4 bg-white font-sans border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring-1 ring-green-500"
               >
                 <option value="" disabled selected hidden>Pilih Driver</option>
-                <option value="true">Dengan Sopir</option>
-                <option value="false">Tanpa Sopir</option>  
+                <option value="true" class="hover:bg-green-300 hover:text-green-600">Dengan Sopir</option>
+                <option value="false" class="hover:bg-green-300 hover:text-green-600">Tanpa Sopir</option>  
               </select>
             </div>    
             <div class="inline-block col-span-2 p-5 md:p-6">
               <label for="date" class="inline-block font-sans mb-3">Tanggal</label>
               <input
-                required
                 type="date"
                 id="date"
                 name="date"
                 placeholder="Pilih Tanggal"
-                class="flex-grow w-full h-10 px-4 bg-white font-sans border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring-1"
+                class="flex-grow w-full h-10 px-4 bg-white font-sans border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring-1 ring-green-500"
               />
             </div>    
             <div class="inline-block col-span-2 p-5 md:p-6">
               <label for="time" class="inline-block font-sans mb-3">Waktu Jemput/Ambil</label>
               <input
-                required
                 type="time"
                 id="time"
                 name="time"
                 placeholder="Pilih Waktu"
-                class="flex-grow w-full h-10 px-4 bg-white font-sans border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring-1"
+                class="flex-grow w-full h-10 px-4 bg-white font-sans border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring-1 ring-green-500"
               />
             </div>    
             <div class="inline-block col-span-2 p-5 md:p-6">
@@ -164,14 +162,16 @@
                 id="capacity"
                 name="capacity"
                 placeholder="Jumlah Penumpang"
-                class="flex-grow w-full h-10 px-4 p-2 bg-white font-sans border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring-1"
+                class="flex-grow w-full h-10 px-4 p-2 bg-white font-sans border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring-1 ring-green-500"
               />
             </div>
             <div class="inline-block col-span-2 md:col-span-1 p-5 md:p-6 md:mt-9">
               <button 
                 id="submit-btn"
-                type="submit" 
-                class="inline-flex items-center justify-center h-10 px-4 md:px-1 font-semibold font-sans text-white rounded bg-green-500 hover:bg-green-600">
+                type="button" 
+                class="inline-flex items-center justify-center h-10 px-4 md:px-1 font-semibold font-sans text-white rounded bg-green-500 hover:bg-green-600"
+                disabled
+                >
                 Cari Mobil
               </button>
             </div>
@@ -258,27 +258,14 @@
       </div>
     </footer>
 
+    <script type="text/javascript" src="./scripts/script.js"></script>
     <script type="text/javascript" src="./scripts/binar.js"></script>
     <script type="text/javascript" src="./scripts/app.js"></script>
     <script type="text/javascript" src="./scripts/car.js"></script>
     <script type="text/javascript" src="./scripts/main.js"></script>
     <script>
-
       feather.replace();
-
-      // Mobile Side Nav Menu
-      const openMenu = document.getElementById('openMenu');
-      const closeMenu = document.getElementById('closeMenu');
-      const sideMenu = document.getElementById('sideMenu');
-
-      openMenu.addEventListener('click', () => {
-        sideMenu.classList.toggle('hidden');
-      });
-
-      closeMenu.addEventListener('click', () => {
-        sideMenu.classList.toggle('hidden');
-      });
-      
     </script>
+    
   </body>
 </html>

@@ -2,10 +2,10 @@ class App {
   constructor() {
     this.carContainerElement = document.getElementById("car-container");
     this.submitButton = document.getElementById("submit-btn");
-    this.filterDriver = document.getElementById("driver")
-    this.filterDate = document.getElementById("date")
-    this.filterTime = document.getElementById("time")
-    this.filterCapacity = document.getElementById("capacity")
+    this.driverInput = document.getElementById("driver")
+    this.dateInput = document.getElementById("date")
+    this.timeInput = document.getElementById("time")
+    this.capacityInput = document.getElementById("capacity")
   }
 
   async init() {
@@ -18,10 +18,10 @@ class App {
   }
 
   filter = async () => {
-    const driver = this.filterDriver.value;
-    const date = this.filterDate.value;
-    const time = this.filterTime.value;
-    const capacity = this.filterCapacity.value;
+    const driver = this.driverInput.value;
+    const date = this.dateInput.value;
+    const time = this.timeInput.value;
+    const capacity = this.capacityInput.value;
 
     await this.loadFilter(driver, date, time, capacity);
   }
@@ -44,7 +44,8 @@ class App {
     const dateTime = new Date(`${date}T${time}Z`);
 
     const cars = await Binar.listCars(car =>
-      car.available &&
+      car.available && 
+      car.driverType === driver &&
       car.availableAt <= dateTime &&
       car.capacity >= capacity
     );
